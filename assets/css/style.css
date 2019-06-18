@@ -1,0 +1,12 @@
+* {
+    text-align: center
+}
+
+/* body { */
+    /* background-image: src("../assets/images/horror-film-background-9.jpg"); */
+    /* background-color: black; */
+}
+
+.gamebox {
+    background-color: darkred;
+}
