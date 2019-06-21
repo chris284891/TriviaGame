@@ -1,5 +1,5 @@
 # Trivia Game
-This is my first jQuery application and my second Javascript app.
+This is my 3rd JavaScript app.
 
 # Link
 https://chris284891.github.io/TriviaGame/
