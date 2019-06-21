@@ -59,13 +59,13 @@ var game = {
     // Can't get counter to stay on screen
     start: function () {
         timer = setInterval(game.countdown, 1000);
-        $("#insidecontainer").prepend("<h2>Time Remaining: <span id='counter-number'>90</span> Seconds</h2>");
+        $('#insidecontainer').prepend('<h2>Time Remaining: <span id="counter-number">90</span> Seconds</h2>');
         $("#start").remove();
 
         for (var i = 0; i < questions.length; i++) {
-            panel.append("<h2>" + questions[i].question + "</h2>");
+            panel.append('<h2>' + questions[i].question + '</h2>');
             for (var j = 0; j < questions[i].choices.length; j++) {
-                panel.append("<input type='radio' name ='question" + "-" + i + "value=" + questions[i].choices[j] + ">" + questions[i].choices[j]);
+                panel.append('<input type="radio" name ="question' + '-' + i + '"value="' + questions[i].choices[j] + '">' + questions[i].choices[j]);
             }
         }
         panel.append("<button id='done'>Done!</button>");
