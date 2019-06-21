@@ -46,15 +46,15 @@ var questions = [{
 var game = {
     correct: 0,
     incorrect: 0,
-    countdown: 90,
+    timeLeft: 90,
 
     countdown: function () {
-        game.countdown--;
-        $("#counter-number").html(game.countdown);
-        if (game.countdown === 0) {
+        game.timeLeft--;
+        console.log(game.timeLeft)
+        $("#counter-number").html(game.timeLeft);
+        if (game.timeLeft === 0) {
             alert("Out of Time!");
             game.done();
-            console.log(countdown)
         }
     },
     // Can't get counter to stay on screen
