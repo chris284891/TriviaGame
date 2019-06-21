@@ -57,7 +57,6 @@ var game = {
             game.done();
         }
     },
-    // Can't get counter to stay on screen
     start: function () {
         timer = setInterval(game.countdown, 1000);
         $('#insidecontainer').prepend('<h2>Time Remaining: <span id="counter-number">90</span> Seconds</h2>');
