@@ -54,6 +54,7 @@ var game = {
         if (game.countdown === 0) {
             alert("Out of Time!");
             game.done();
+            console.log(countdown)
         }
     },
     // Can't get counter to stay on screen
@@ -61,6 +62,7 @@ var game = {
         timer = setInterval(game.countdown, 1000);
         $('#insidecontainer').prepend('<h2>Time Remaining: <span id="counter-number">90</span> Seconds</h2>');
         $("#start").remove();
+        console.log(timer)
 
         for (var i = 0; i < questions.length; i++) {
             panel.append('<h2>' + questions[i].question + '</h2>');
@@ -74,7 +76,6 @@ var game = {
     done: function () {
         $.each($("input[name='question-0']:checked"), function () {
             if ($(this).val() == questions[0].correctAnswer) {
-                console.log(this);
                 game.correct++;
             } else {
                 game.incorrect++;
@@ -82,7 +83,6 @@ var game = {
         });
         $.each($("input[name='question-1']:checked"), function () {
             if ($(this).val() == questions[1].correctAnswer) {
-                console.log(this);
                 game.correct++;
             } else {
                 game.incorrect++;
@@ -90,7 +90,6 @@ var game = {
         });
         $.each($("input[name='question-2']:checked"), function () {
             if ($(this).val() == questions[2].correctAnswer) {
-                console.log(this);
                 game.correct++;
             } else {
                 game.incorrect++;
@@ -98,7 +97,6 @@ var game = {
         });
         $.each($("input[name='question-3']:checked"), function () {
             if ($(this).val() == questions[3].correctAnswer) {
-                console.log(this);
                 game.correct++;
             } else {
                 game.incorrect++;
@@ -106,7 +104,6 @@ var game = {
         });
         $.each($("input[name='question-4']:checked"), function () {
             if ($(this).val() == questions[4].correctAnswer) {
-                console.log(this);
                 game.correct++;
             } else {
                 game.incorrect++;
