@@ -25,7 +25,7 @@ Click radio buttons next to answers then hit submit before timer runs out. Then 
 - Click on green button that says "Clone or download"
 - Download zip then extract all
 - Then open in text editor of your choice
-- If you want to run app locally just open index.html
+- If you want to run app locally just open index.html in your default browser
 
 # Prequisites
 Just make sure you have a current updated browser.
