@@ -1,7 +1,8 @@
 # Trivia Game
 Horror movie trivia game with a timer.
 
-![screenshot1](assets/readmeScreenshots/trivia1.png=100x100)
+<img src="assets/readmeScreenshots/trivia1" alt="screenshot1" width="200px"/>
+
 ![screenshot2](assets/readmeScreenshots/trivia2.png)
 
 
