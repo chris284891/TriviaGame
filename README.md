@@ -1,6 +1,10 @@
 # Trivia Game
 Horror movie trivia game with a timer.
 
+![image](assets/readmeScreenshots/trivia1.png)
+![image](assets/readmeScreenshots/trivia2.png)
+
+
 # Link
 https://chris284891.github.io/TriviaGame/
 
