@@ -18,6 +18,13 @@ Made an array that has all questions with answers and correct answers stored as 
 - The third function(done) handles all the tallying up of the score based on correct and incorrect answers
 - The fourth function(results) handles the display of the results screen
 
+# Tech
+- jQuery
+- Timer
+- JavaScript
+- HTML 5
+- CSS 3
+
 # Instructions
 Click radio buttons next to answers then hit submit before timer runs out. Then a score should display but app has yet to be debugged(coming soon!).
 
