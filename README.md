@@ -1,14 +1,31 @@
 # Trivia Game
-This is my 3rd JavaScript app.
+Horror movie trivia game with a timer.
 
 # Link
 https://chris284891.github.io/TriviaGame/
 
-# Instructions
-Try to get the correct answer on these horror movie trivia questions.
+# Problem
+Create an app that has a timer, way to submit answers, and tally up correct/incorrect answers to be shown to user.
 
-# Getting Started
-If you want to edit this code. Just open any of the files and copy-&-paste the code into any coding program of your choice or perform a git clone.
+# Solution
+Made an array that has all questions with answers and correct answers stored as objects. Then made a variable that sets correct, incorrect, and timer at starting values as an object. Then inside said object I made four functions. 
+- The first function(countdown) handles the countdown and the alert for running out of time. 
+- The second function(start) handles the start of the game.
+    - When the user clicks the start button it starts the timer at a set interval at 1s(1000ms)
+    - Removes start screen and displays timer display
+    - Uses two for loops to display all questions and answers with append
+    - Appends a "Done" button
+- The third function(done) handles all the tallying up of the score based on correct and incorrect answers
+- The fourth function(results) handles the display of the results screen
+
+# Instructions
+Click radio buttons next to answers then hit submit before timer runs out. Then a score should display but app has yet to be debugged(coming soon!).
+
+# How to Edit
+- Click on green button that says "Clone or download"
+- Download zip then extract all
+- Then open in text editor of your choice
+- If you want to run app locally just open index.html
 
 # Prequisites
 Just make sure you have a current updated browser.
