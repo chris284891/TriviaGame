@@ -34,7 +34,7 @@ Couldn't get end screen to append because I was removing whole div and patched p
 - CSS 3
 
 # Instructions
-Click radio buttons next to answers then hit submit before timer runs out. Then a score will display with correct, incorrect, unanswered, and time taken.
+Click radio buttons next to answers then hit submit before timer runs out. Then a score will display with correct, incorrect, unanswered, and time taken. IF TIME RUNS OUT AND ALERT POPS UP CLICK "Ok" TO BRING UP END SCREEN.
 
 # How to Edit
 - Click on green button that says "Clone or download"
