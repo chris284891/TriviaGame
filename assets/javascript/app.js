@@ -1,4 +1,5 @@
 var panel = $("#gamebox");
+var panel2 = $("#answers");
 
 $(document).on("click", "#start", function (event) {
     game.start();
@@ -50,7 +51,7 @@ var game = {
 
     countdown: function () {
         game.timeLeft--;
-        console.log(game.timeLeft)
+        // console.log(game.timeLeft)
         $("#counter-number").html(game.timeLeft);
         if (game.timeLeft === 0) {
             alert("Out of Time!");
@@ -61,7 +62,7 @@ var game = {
         timer = setInterval(game.countdown, 1000);
         $('#insidecontainer').prepend('<h2>Time Remaining: <span id="counter-number">90</span> Seconds</h2>');
         $("#start").remove();
-        console.log(timer)
+        // console.log(timer)
 
         for (var i = 0; i < questions.length; i++) {
             panel.append('<h2>' + questions[i].question + '</h2>');
@@ -113,6 +114,22 @@ var game = {
                 game.incorrect++;
             }
         });
+        $.each($("input[name='question-5']:checked"), function () {
+            if ($(this).val() == questions[5].correctAnswer) {
+                game.correct++;
+            } 
+            else {
+                game.incorrect++;
+            }
+        });
+        $.each($("input[name='question-6']:checked"), function () {
+            if ($(this).val() == questions[6].correctAnswer) {
+                game.correct++;
+            } 
+            else {
+                game.incorrect++;
+            }
+        });
         this.results();
     },
 
@@ -121,9 +138,13 @@ var game = {
         clearInterval(timer);
         // Can't get end screen to come up
         $("#insidecontainer").remove();
-        panel.html("<h2>Done!</h2>");
-        panel.append("<h3>You got this many right: " + this.correct + "</h3>");
-        panel.append("<h3>You got this many wrong: " + this.incorrect + "</h3>");
-        panel.append("<h3>This is how many you didn't answer: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+        panel2.append("<h2>Done!</h2>");
+        panel2.append("<h3>Right Answers: " + this.correct + "</h3>");
+        panel2.append("<h3>Wrong Answers: " + this.incorrect + "</h3>");
+        panel2.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+        panel2.append("<h3>Time took: " + (90 - this.timeLeft) + " Seconds")
+        console.log(this.incorrect)
+        console.log(this.correct)
+        console.log(questions.length - (this.incorrect + this.correct))
     }
 };
