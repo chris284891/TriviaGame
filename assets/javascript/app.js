@@ -70,7 +70,7 @@ var game = {
                 panel.append('<input type="radio" name ="question' + '-' + i + '"value="' + questions[i].choices[j] + '">' + questions[i].choices[j]);
             }
         }
-        panel.append("<button id='done'>Done!</button>");
+        panel.append("<div><div id='makeBlack'><button class='btn' id='done'>Done!</button></div></div>");
     },
 
     done: function () {
