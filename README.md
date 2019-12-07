@@ -9,7 +9,7 @@ Horror movie trivia game with a timer.
 
 
 # Link
-https://chris284891.github.io/TriviaGame/
+https://swedishkinda.github.io/TriviaGame/
 
 # Problem
 Create an app that has a timer, way to submit answers, and tally up correct/incorrect answers to be shown to user.
